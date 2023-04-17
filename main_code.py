@@ -4,6 +4,6 @@ app = pyrogram.Client('my_resume_bot', api_id='your_api_id_here', api_hash='your
 
 @app.on_message(pyrogram.Filters.command('start'))
 def send_welcome(client, message):
-client.send_message(message.chat.id, "Привет! Я твоё резюме. Как я могу тебе помочь?")
+    client.send_message(message.chat.id, "Hello! I am your resume bot. How can I help you?")
 
 app.run()
