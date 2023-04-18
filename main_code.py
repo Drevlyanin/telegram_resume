@@ -12,6 +12,3 @@ def send_welcome(client, message):
 
     # Increase interaction count on each interaction
     interactions_count += 1
-
-    # Record user ID of the user interacting with the bot
-    user_ids.append(message.chat.id)
