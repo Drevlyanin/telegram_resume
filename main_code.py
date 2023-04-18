@@ -23,10 +23,6 @@ def send_welcome(client, message):
 def send_stats(client, message):
     global interactions_count, user_ids
 
-    # Check if the stats request is coming from the bot owner (you can define your own user ID)
-    if message.chat.id == your_user_id:
-        # Send statistics to the bot owner
-        stats = f"Interactions count: {interactions_count}\nUser IDs: {user_ids}"
-        client.send_message(message.chat.id, stats)
+
 
 
