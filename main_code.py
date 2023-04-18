@@ -29,4 +29,4 @@ def send_stats(client, message):
         stats = f"Interactions count: {interactions_count}\nUser IDs: {user_ids}"
         client.send_message(message.chat.id, stats)
 
-app.run()
+
