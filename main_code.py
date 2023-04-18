@@ -15,6 +15,3 @@ def send_welcome(client, message):
 
     # Record user ID of the user interacting with the bot
     user_ids.append(message.chat.id)
-
-    # Send a welcome message to the user
-    client.send_message(message.chat.id, "Hello! I am your resume bot. How can I help you?")
