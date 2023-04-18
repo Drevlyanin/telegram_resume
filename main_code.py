@@ -18,11 +18,3 @@ def send_welcome(client, message):
 
     # Send a welcome message to the user
     client.send_message(message.chat.id, "Hello! I am your resume bot. How can I help you?")
-
-@app.on_message(pyrogram.Filters.command('stats'))
-def send_stats(client, message):
-    global interactions_count, user_ids
-
-
-
-
